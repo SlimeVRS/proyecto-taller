@@ -56,3 +56,7 @@ set_global_assignment -name MIF_FILE ARMv4.mif
 set_global_assignment -name QIP_FILE rom.qip
 set_global_assignment -name MIF_FILE Mif2.mif
 set_global_assignment -name QIP_FILE ram.qip
+set_global_assignment -name SYSTEMVERILOG_FILE nLshift.sv
+set_global_assignment -name SYSTEMVERILOG_FILE nRshift.sv
+set_global_assignment -name SYSTEMVERILOG_FILE nlLshift.sv
+set_global_assignment -name SYSTEMVERILOG_FILE nlRshift.sv
