@@ -60,3 +60,8 @@ set_global_assignment -name SYSTEMVERILOG_FILE nLshift.sv
 set_global_assignment -name SYSTEMVERILOG_FILE nRshift.sv
 set_global_assignment -name SYSTEMVERILOG_FILE nlLshift.sv
 set_global_assignment -name SYSTEMVERILOG_FILE nlRshift.sv
+set_global_assignment -name SYSTEMVERILOG_FILE 1bitadder.sv
+set_global_assignment -name SYSTEMVERILOG_FILE nfulladder.sv
+set_global_assignment -name SYSTEMVERILOG_FILE restadorNbit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE restador1bit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALUComponent.sv
