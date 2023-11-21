@@ -1,0 +1,81 @@
+Número de Identificación,Nombre,Apellido,Correo Electrónico,Teléfono,Fecha de Nacimiento,Género,Dirección,Registro de Asistencia,Expediente Académico,Calificaciones,Registro Médico,Contacto de Emergencia,Datos Demográficos
+2001,Ana,Martínez,ana.martinez@email.com,(555) 123-4567,2005-03-15,Femenino,123 Calle Principal,Asistió a todas las clases,Excelente rendimiento,9.5,Saludable,María Martínez,(555) 111-2222,Fecha de Inscripción: 2015
+2002,Juan,Pérez,juan.perez@email.com,(555) 987-6543,2006-07-22,Masculino,456 Avenida Central,Ausente en 2 clases,Buen rendimiento,8.2,Alergias a alimentos,Pedro Pérez,(555) 333-4444,Fecha de Inscripción: 2016
+2003,Sofía,Rodríguez,sofia.rodriguez@email.com,(555) 789-1234,2004-11-10,Femenino,789 Calle Secundaria,Asistió a todas las clases,Excelente rendimiento,9.8,Ninguna,Elena Rodríguez,(555) 555-6666,Fecha de Inscripción: 2014
+2004,Carlos,Gómez,carlos.gomez@email.com,(555) 234-5678,2007-02-08,Masculino,234 Avenida Norte,Asistió a todas las clases,Satisfactorio rendimiento,7.5,Problemas de visión,Luis Gómez,(555) 777-8888,Fecha de Inscripción: 2017
+2005,María,Fernández,maria.fernandez@email.com,(555) 432-8765,2003-05-30,Femenino,567 Calle Oeste,Asistió a todas las clases,Excelente rendimiento,9.6,Alergias estacionales,Ana Fernández,(555) 999-0000,Fecha de Inscripción: 2013
+2006,Luis,Sánchez,luis.sanchez@email.com,(555) 876-5432,2006-08-17,Masculino,345 Avenida Sur,Asistió a todas las clases,Excelente rendimiento,9.4,Ninguna,María Sánchez,(555) 123-9876,Fecha de Inscripción: 2016
+2007,Andrea,Mendoza,andrea.mendoza@email.com,(555) 345-6789,2004-12-03,Femenino,678 Calle Este,Asistió a todas las clases,Excelente rendimiento,9.7,Alergias a animales,Miguel Mendoza,(555) 987-6543,Fecha de Inscripción: 2014
+2008,Daniel,Ramírez,daniel.ramirez@email.com,(555) 567-4321,2007-03-20,Masculino,123 Avenida Central,Asistió a todas las clases,Satisfactorio rendimiento,7.8,Ninguna,Laura Ramírez,(555) 234-5678,Fecha de Inscripción: 2017
+2009,Laura,Torres,laura.torres@email.com,(555) 654-7890,2003-06-25,Femenino,987 Calle Oeste,Asistió a todas las clases,Excelente rendimiento,9.9,Ninguna,Carlos Torres,(555) 456-7890,Fecha de Inscripción: 2013
+2010,Diego,Ortiz,diego.ortiz@email.com,(555) 789-2345,2005-01-12,Masculino,432 Avenida Sur,Ausente en 1 clase,Satisfactorio rendimiento,7.2,Ninguna,Isabel Ortiz,(555) 333-2222,Fecha de Inscripción: 2015
+011,Valentina,López,valentina.lopez@email.com,(555) 456-7890,2007-04-14,Femenino,567 Avenida Norte,Asistió a todas las clases,Excelente rendimiento,9.6,Ninguna,José López,(555) 111-2222,Fecha de Inscripción: 2017
+2012,Javier,Hernández,javier.hernandez@email.com,(555) 987-3456,2006-09-18,Masculino,432 Calle Principal,Asistió a todas las clases,Satisfactorio rendimiento,7.8,Ninguna,María Hernández,(555) 555-6666,Fecha de Inscripción: 2016
+2013,Isabella,Pérez,isabella.perez@email.com,(555) 678-1234,2004-07-07,Femenino,789 Calle Este,Asistió a todas las clases,Excelente rendimiento,9.9,Alergias estacionales,Andrés Pérez,(555) 333-4444,Fecha de Inscripción: 2014
+2014,Ángel,García,angel.garcia@email.com,(555) 234-5678,2005-10-09,Masculino,234 Calle Oeste,Asistió a todas las clases,Excelente rendimiento,9.5,Ninguna,Lucía García,(555) 777-8888,Fecha de Inscripción: 2015
+2015,Martina,Ruíz,martina.ruiz@email.com,(555) 543-8765,2003-02-28,Femenino,678 Avenida Central,Asistió a todas las clases,Excelente rendimiento,9.7,Ninguna,Carlos Ruíz,(555) 234-1234,Fecha de Inscripción: 2013
+2016,Eduardo,Paredes,eduardo.paredes@email.com,(555) 345-6789,2004-12-15,Masculino,432 Calle Sur,Asistió a todas las clases,Satisfactorio rendimiento,8.2,Ninguna,Sofía Paredes,(555) 444-5555,Fecha de Inscripción: 2014
+2017,Alicia,Torres,alicia.torres@email.com,(555) 876-5432,2005-09-03,Femenino,345 Avenida Oeste,Ausente en 2 clases,Satisfactorio rendimiento,7.5,Alergias a alimentos,Luis Torres,(555) 666-7777,Fecha de Inscripción: 2015
+2018,Ricardo,López,ricardo.lopez@email.com,(555) 432-9876,2003-04-01,Masculino,234 Calle Este,Asistió a todas las clases,Excelente rendimiento,9.8,Ninguna,María López,(555) 999-8888,Fecha de Inscripción: 2013
+2019,Carolina,Mendoza,carolina.mendoza@email.com,(555) 555-4444,2007-06-22,Femenino,678 Calle Norte,Asistió a todas las clases,Excelente rendimiento,9.3,Alergias a animales,Carlos Mendoza,(555) 222-3333,Fecha de Inscripción: 2017
+2020,Pablo,Herrera,pablo.herrera@email.com,(555) 444-3333,2005-08-09,Masculino,456 Avenida Oeste,Asistió a todas las clases,Satisfactorio rendimiento,8.4,Ninguna,Laura Herrera,(555) 777-6666,Fecha de Inscripción: 2015
+2021,Susana,Cabrera,susana.cabrera@email.com,(555) 543-3210,2003-01-24,Femenino,567 Avenida Sur,Asistió a todas las clases,Excelente rendimiento,9.7,Alergias estacionales,José Cabrera,(555) 123-7777,Fecha de Inscripción: 2013
+2022,Alejandro,Gómez,alejandro.gomez@email.com,(555) 321-4321,2007-03-08,Masculino,345 Calle Este,Asistió a todas las clases,Excelente rendimiento,9.9,Ninguna,María Gómez,(555) 555-9999,Fecha de Inscripción: 2017
+2023,Carmen,Rodríguez,carmen.rodriguez@email.com,(555) 987-6543,2006-04-17,Femenino,234 Calle Sur,Asistió a todas las clases,Excelente rendimiento,9.6,Ninguna,Carlos Rodríguez,(555) 666-9999,Fecha de Inscripción: 2016
+2024,Felipe,Martínez,felipe.martinez@email.com,(555) 555-1234,2004-09-30,Masculino,678 Avenida Oeste,Asistió a todas las clases,Satisfactorio rendimiento,8.7,Ninguna,Sofía Martínez,(555) 111-7777,Fecha de Inscripción: 2014
+2025,María,Suárez,maria.suarez@email.com,(555) 444-1111,2005-02-05,Femenino,789 Calle Norte,Asistió a todas las clases,Excelente rendimiento,9.8,Alergias a alimentos,Carlos Suárez,(555) 333-1111,Fecha de Inscripción: 2015
+2026,Manuel,Gallegos,manuel.gallegos@email.com,(555) 123-6543,2003-07-12,Masculino,456 Avenida Central,Asistió a todas las clases,Excelente rendimiento,9.6,Ninguna,Laura Gallegos,(555) 123-5555,Fecha de Inscripción: 2013
+2027,Isabel,Flores,isabel.flores@email.com,(555) 444-5678,2006-11-27,Femenino,567 Calle Principal,Asistió a todas las clases,Satisfactorio rendimiento,8.3,Ninguna,José Flores,(555) 987-9999,Fecha de Inscripción: 2016
+2028,Andrés,Ramírez,andres.ramirez@email.com,(555) 666-4444,2007-01-09,Masculino,432 Avenida Este,Asistió a todas las clases,Excelente rendimiento,9.9,Ninguna,Marta Ramírez,(555) 444-6666,Fecha de Inscripción: 2017
+2029,Laura,Cabrera,laura.cabrera@email.com,(555) 555-3333,2004-06-14,Femenino,345 Avenida Oeste,Asistió a todas las clases,Excelente rendimiento,9.7,Alergias estacionales,Carlos Cabrera,(555) 666-7777,Fecha de Inscripción: 2014
+2030,José,Sánchez,jose.sanchez@email.com,(555) 123-9876,2005-03-02,Masculino,234 Avenida Norte,Asistió a todas las clases,Satisfactorio rendimiento,8.2,Ninguna,María Sánchez,(555) 111-9999,Fecha de Inscripción: 2015Número de Identificación,Nombre del Estudiante,Evaluación Docente,Evaluación del Estudiante,Resultados de Pruebas Estandarizadas,Informes de Satisfacción,Asistencia,Puntajes de Rendimiento
+3001,Ana Martínez,4.5,4.8,85,Aprobado,95%,89
+3002,Juan Pérez,4.2,4.6,78,Aprobado,94%,82
+3003,Sofía Rodríguez,4.8,4.9,92,Aprobado,96%,94
+3004,Carlos Gómez,4.0,4.3,75,Aprobado,92%,78
+3005,María Fernández,4.9,4.7,88,Aprobado,98%,91
+3006,Luis Sánchez,4.4,4.5,80,Aprobado,93%,85
+3007,Andrea Mendoza,4.7,4.8,87,Aprobado,95%,88
+3008,Daniel Ramírez,4.2,4.4,76,Aprobado,91%,80
+3009,Laura Torres,4.9,4.7,89,Aprobado,97%,93
+3010,Diego Ortiz,4.1,4.2,74,Aprobado,90%,77
+3011,Valentina López,4.5,4.7,83,Aprobado,94%,86
+3012,Javier Hernández,4.3,4.4,79,Aprobado,92%,81
+3013,Isabella Pérez,4.7,4.9,90,Aprobado,96%,92
+3014,Ángel García,4.2,4.3,77,Aprobado,93%,79
+3015,Martina Ruíz,4.8,4.7,86,Aprobado,98%,90
+3016,Eduardo Paredes,4.4,4.5,81,Aprobado,94%,84
+3017,Alicia Torres,4.0,4.2,73,Aprobado,90%,76
+3018,Ricardo López,4.7,4.8,85,Aprobado,95%,88
+3019,Carolina Mendoza,4.3,4.4,79,Aprobado,92%,82
+3020,Pablo Herrera,4.6,4.7,84,Aprobado,94%,87
+3021,Susana Cabrera,4.5,4.7,82,Aprobado,94%,85
+3022,Alejandro Gómez,4.4,4.5,80,Aprobado,93%,84
+3023,Carmen Rodríguez,4.8,4.9,88,Aprobado,96%,91
+3024,Felipe Martínez,4.2,4.3,76,Aprobado,91%,79
+3025,María Suárez,4.9,4.7,90,Aprobado,97%,93
+3026,Manuel Gallegos,4.3,4.5,78,Aprobado,92%,80
+3027,Isabel Flores,4.5,4.7,85,Aprobado,94%,87
+3028,Andrés Ramírez,4.4,4.6,80,Aprobado,93%,83
+3029,Laura Cabrera,4.6,4.7,84,Aprobado,95%,86
+3030,José Sánchez,4.7,4.8,87,Aprobado,96%,90
+3031,Cristina Martínez,4.8,4.7,86,Aprobado,97%,89
+3032,Roberto González,4.5,4.5,81,Aprobado,94%,82
+3033,Beatriz López,4.2,4.4,76,Aprobado,91%,78
+3034,Francisco Herrera,4.7,4.9,90,Aprobado,96%,92
+3035,Valeria Soto,4.4,4.6,82,Aprobado,93%,85
+3036,José Torres,4.6,4.7,85,Aprobado,95%,88
+3037,Verónica Ramírez,4.3,4.5,77,Aprobado,92%,79
+3038,Andrés Flores,4.8,4.9,88,Aprobado,97%,91
+3039,Martina Ortega,4.2,4.4,75,Aprobado,91%,78
+3040,Emilio García,4.5,4.6,82,Aprobado,94%,86
+3041,María Sánchez,4.7,4.8,87,Aprobado,95%,88
+3042,Javier González,4.3,4.5,79,Aprobado,92%,80
+3043,Lucía Martínez,4.6,4.7,84,Aprobado,94%,87
+3044,Manuel Pérez,4.4,4.6,80,Aprobado,93%,84
+3045,Andrea Fernández,4.5,4.7,85,Aprobado,94%,86
+3046,Diego Rodríguez,4.8,4.9,89,Aprobado,97%,92
+3047,Ana López,4.2,4.4,76,Aprobado,91%,79
+3048,Carlos Ramírez,4.7,4.8,88,Aprobado,96%,91
+3049,Sofía Torres,4.3,4.5,79,Aprobado,92%,81
+3050,Juan Sánchez,4.6,4.7,84,Aprobado,94%,87
