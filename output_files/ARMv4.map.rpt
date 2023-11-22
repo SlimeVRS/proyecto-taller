@@ -1,0 +1,448 @@
+Analysis & Elaboration report for ARMv4
+Wed Nov 22 02:21:10 2023
+Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Analysis & Elaboration IP Cores Summary
+  5. Analysis & Elaboration Settings
+  6. Analysis & Elaboration Messages
+  7. Analysis & Elaboration Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++--------------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                                 ;
++-------------------------------+------------------------------------------------+
+; Analysis & Elaboration Status ; Failed - Wed Nov 22 02:21:10 2023              ;
+; Quartus Prime Version         ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
+; Revision Name                 ; ARMv4                                          ;
+; Top-level Entity Name         ; Proyecto                                       ;
+; Family                        ; Cyclone V                                      ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                      ;
+; Total registers               ; N/A until Partition Merge                      ;
+; Total pins                    ; N/A until Partition Merge                      ;
+; Total virtual pins            ; N/A until Partition Merge                      ;
+; Total block memory bits       ; N/A until Partition Merge                      ;
+; Total PLLs                    ; N/A until Partition Merge                      ;
+; Total DLLs                    ; N/A until Partition Merge                      ;
++-------------------------------+------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration IP Cores Summary                                                                                          ;
++--------+--------------+---------+--------------+--------------+------------------------------------------------+-----------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                ; IP Include File ;
++--------+--------------+---------+--------------+--------------+------------------------------------------------+-----------------+
+; Altera ; LPM_MUX      ; 20.1    ; N/A          ; N/A          ; |Proyecto|CPU:CPUARM|MUX1_2_32:ReadData_Result ; MUX1_2_32.v     ;
+; Altera ; LPM_MUX      ; 20.1    ; N/A          ; N/A          ; |Proyecto|CPU:CPUARM|MUX1_2_32:Result_PC       ; MUX1_2_32.v     ;
+; Altera ; LPM_MUX      ; 20.1    ; N/A          ; N/A          ; |Proyecto|CPU:CPUARM|MUX1_2_32:Shifted_SrcB    ; MUX1_2_32.v     ;
+; Altera ; LPM_MUX      ; 20.1    ; N/A          ; N/A          ; |Proyecto|CPU:CPUARM|MUX1_2_4:inst_RA1         ; MUX1_2_4.v      ;
+; Altera ; LPM_MUX      ; 20.1    ; N/A          ; N/A          ; |Proyecto|CPU:CPUARM|MUX1_2_4:inst_RA2         ; MUX1_2_4.v      ;
++--------+--------------+---------+--------------+--------------+------------------------------------------------+-----------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                                           ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; Proyecto           ; ARMv4              ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Elaboration
+    Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+    Info: Processing started: Wed Nov 22 02:20:56 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ARMv4 -c ARMv4 --analysis_and_elaboration
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file n_sumador.sv
+    Info (12023): Found entity 1: n_sumador_completo File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/n_sumador.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file instructionmemory.v
+    Info (12023): Found entity 1: InstructionMemory File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/InstructionMemory.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file datamemory.v
+    Info (12023): Found entity 1: DataMemory File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/DataMemory.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file mux1_4_32.v
+    Info (12023): Found entity 1: MUX1_4_32 File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/MUX1_4_32.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file mux1_2_32.v
+    Info (12023): Found entity 1: MUX1_2_32 File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/MUX1_2_32.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file mux1_2_4.v
+    Info (12023): Found entity 1: MUX1_2_4 File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/MUX1_2_4.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file mux1_2.v
+    Info (12023): Found entity 1: MUX1_2 File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/MUX1_2.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file rom.v
+    Info (12023): Found entity 1: rom File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/rom.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file ram.v
+    Info (12023): Found entity 1: RAM File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/ram.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file restadornbit.sv
+    Info (12023): Found entity 1: restadorNbit File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/restadorNbit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file restador1bit.sv
+    Info (12023): Found entity 1: restador1bit File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/restador1bit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file xor.sv
+    Info (12023): Found entity 1: n_xor File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/xor.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file or_mux_f.sv
+    Info (12023): Found entity 1: or_mux_f File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/or_mux_f.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file or_mux.sv
+    Info (12023): Found entity 1: or_mux File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/or_mux.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file n_or.sv
+    Info (12023): Found entity 1: n_or File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/n_or.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file not.sv
+    Info (12023): Found entity 1: n_not File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/not.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file extend.sv
+    Info (12023): Found entity 1: Extend File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Extend.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pc.sv
+    Info (12023): Found entity 1: PC File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/PC.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pclogic.sv
+    Info (12023): Found entity 1: PCLogic File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/PCLogic.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
+    Info (12023): Found entity 1: ALU File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/ALU.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alucomponent.sv
+    Info (12023): Found entity 1: ALUComponent File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/ALUComponent.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alucomponent_tb.sv
+    Info (12023): Found entity 1: ALUComponent_tb File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/ALUComponent_tb.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file aludecoder.sv
+    Info (12023): Found entity 1: ALUDecoder File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/ALUDecoder.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file n_and.sv
+    Info (12023): Found entity 1: n_and File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/n_and.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file conditionallogic.sv
+    Info (12023): Found entity 1: ConditionalLogic File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/ConditionalLogic.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file conditionallogic_tb.sv
+    Info (12023): Found entity 1: ConditionalLogic_tb File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/ConditionalLogic_tb.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file conditioncheck.sv
+    Info (12023): Found entity 1: ConditionCheck File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/ConditionCheck.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file conditioncheck_tb.sv
+    Info (12023): Found entity 1: ConditionCheck_tb File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/ConditionCheck_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file controldecoder.sv
+    Info (12023): Found entity 1: ControlDecoder File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/ControlDecoder.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file controldecoder_tb.sv
+    Info (12023): Found entity 1: ControlDecoder_tb File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/ControlDecoder_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file controlmaindecoder.sv
+    Info (12023): Found entity 1: ControlMainDecoder File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/ControlMainDecoder.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file controlunit.sv
+    Info (12023): Found entity 1: ControlUnit File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/ControlUnit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file cpu.sv
+    Info (12023): Found entity 1: CPU File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/CPU.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file cpu_tb.sv
+    Info (12023): Found entity 1: CPU_tb File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/CPU_tb.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file de1_soc_golden_top.v
+    Info (12023): Found entity 1: DE1_SOC_golden_top File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/DE1_SOC_golden_top.v Line: 54
+Info (12021): Found 1 design units, including 1 entities, in source file equal.sv
+    Info (12023): Found entity 1: equal File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/equal.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file extend_tb.sv
+    Info (12023): Found entity 1: Extend_tb File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Extend_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file greater.sv
+    Info (12023): Found entity 1: greater File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/greater.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file hex_7segments.sv
+    Info (12023): Found entity 1: hex_7segments File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/hex_7segments.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file implementacion.sv
+    Info (12023): Found entity 1: Implementacion File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Implementacion.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file logic_data_manipulation_test_bench.sv
+    Info (12023): Found entity 1: Logic_data_manipulation_test_bench File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Logic_data_manipulation_test_bench.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file n_aritmetic_l_shift.sv
+    Info (12023): Found entity 1: n_aritmetic_L_shift File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/n_aritmetic_L_shift.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file n_aritmetic_r_shift.sv
+    Info (12023): Found entity 1: n_aritmetic_R_shift File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/n_aritmetic_R_shift.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file n_logical_l_shift.sv
+    Info (12023): Found entity 1: n_logical_L_shift File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/n_logical_L_shift.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file n_logical_r_shift.sv
+    Info (12023): Found entity 1: n_logical_R_shift File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/n_logical_R_shift.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file proyecto.sv
+    Info (12023): Found entity 1: Proyecto File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto.sv Line: 54
+Info (12021): Found 1 design units, including 1 entities, in source file proyecto_tb.sv
+    Info (12023): Found entity 1: Proyecto_tb File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto_tb.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file registerfile.sv
+    Info (12023): Found entity 1: RegisterFile File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/RegisterFile.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file registerfile_tb.sv
+    Info (12023): Found entity 1: RegisterFile_tb File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/RegisterFile_tb.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file saad.v
+    Info (12023): Found entity 1: saad File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/saad.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file shifter.sv
+    Info (12023): Found entity 1: Shifter File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Shifter.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file shifter_tb.sv
+    Info (12023): Found entity 1: Shifter_tb File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Shifter_tb.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file sumador_1_bit.sv
+    Info (12023): Found entity 1: sumador_1_bit File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/sumador_1_bit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file testbench.sv
+    Info (12023): Found entity 1: testbench File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/testbench.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at ControlDecoder.sv(7): created implicit net for "Branch" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/ControlDecoder.sv Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at ControlDecoder.sv(11): created implicit net for "ALUOp" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/ControlDecoder.sv Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at ControlUnit.sv(5): created implicit net for "xlk" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/ControlUnit.sv Line: 5
+Warning (10236): Verilog HDL Implicit Net warning at ControlUnit.sv(5): created implicit net for "FlagW" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/ControlUnit.sv Line: 5
+Warning (10236): Verilog HDL Implicit Net warning at ControlUnit.sv(5): created implicit net for "PCS" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/ControlUnit.sv Line: 5
+Warning (10236): Verilog HDL Implicit Net warning at ControlUnit.sv(5): created implicit net for "RegW" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/ControlUnit.sv Line: 5
+Warning (10236): Verilog HDL Implicit Net warning at ControlUnit.sv(5): created implicit net for "MemW" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/ControlUnit.sv Line: 5
+Warning (10236): Verilog HDL Implicit Net warning at ControlUnit.sv(5): created implicit net for "NoWrite" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/ControlUnit.sv Line: 5
+Warning (10236): Verilog HDL Implicit Net warning at CPU.sv(98): created implicit net for "Result" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/CPU.sv Line: 98
+Warning (10236): Verilog HDL Implicit Net warning at CPU.sv(105): created implicit net for "Shift" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/CPU.sv Line: 105
+Warning (10236): Verilog HDL Implicit Net warning at Logic_data_manipulation_test_bench.sv(108): created implicit net for "Shift" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Logic_data_manipulation_test_bench.sv Line: 108
+Warning (10236): Verilog HDL Implicit Net warning at Proyecto.sv(261): created implicit net for "RD2" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto.sv Line: 261
+Warning (10236): Verilog HDL Implicit Net warning at Proyecto.sv(261): created implicit net for "MemWrite" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto.sv Line: 261
+Warning (10236): Verilog HDL Implicit Net warning at Proyecto.sv(261): created implicit net for "END" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto.sv Line: 261
+Info (12127): Elaborating entity "Proyecto" for the top level hierarchy
+Warning (10034): Output port "DRAM_ADDR" at Proyecto.sv(100) has no driver File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto.sv Line: 100
+Warning (10034): Output port "DRAM_BA" at Proyecto.sv(101) has no driver File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto.sv Line: 101
+Warning (10034): Output port "HEX0" at Proyecto.sv(133) has no driver File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto.sv Line: 133
+Warning (10034): Output port "HEX1" at Proyecto.sv(134) has no driver File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto.sv Line: 134
+Warning (10034): Output port "HEX2" at Proyecto.sv(135) has no driver File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto.sv Line: 135
+Warning (10034): Output port "HEX3" at Proyecto.sv(136) has no driver File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto.sv Line: 136
+Warning (10034): Output port "HEX4" at Proyecto.sv(137) has no driver File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto.sv Line: 137
+Warning (10034): Output port "HEX5" at Proyecto.sv(138) has no driver File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto.sv Line: 138
+Warning (10034): Output port "LEDR" at Proyecto.sv(210) has no driver File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto.sv Line: 210
+Warning (10034): Output port "ADC_CONVST" at Proyecto.sv(59) has no driver File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto.sv Line: 59
+Warning (10034): Output port "ADC_DIN" at Proyecto.sv(60) has no driver File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto.sv Line: 60
+Warning (10034): Output port "ADC_SCLK" at Proyecto.sv(62) has no driver File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto.sv Line: 62
+Warning (10034): Output port "AUD_DACDAT" at Proyecto.sv(72) has no driver File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto.sv Line: 72
+Warning (10034): Output port "AUD_XCK" at Proyecto.sv(74) has no driver File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto.sv Line: 74
+Warning (10034): Output port "DRAM_CAS_N" at Proyecto.sv(102) has no driver File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto.sv Line: 102
+Warning (10034): Output port "DRAM_CKE" at Proyecto.sv(103) has no driver File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto.sv Line: 103
+Warning (10034): Output port "DRAM_CLK" at Proyecto.sv(104) has no driver File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto.sv Line: 104
+Warning (10034): Output port "DRAM_CS_N" at Proyecto.sv(105) has no driver File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto.sv Line: 105
+Warning (10034): Output port "DRAM_LDQM" at Proyecto.sv(107) has no driver File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto.sv Line: 107
+Warning (10034): Output port "DRAM_RAS_N" at Proyecto.sv(108) has no driver File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto.sv Line: 108
+Warning (10034): Output port "DRAM_UDQM" at Proyecto.sv(109) has no driver File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto.sv Line: 109
+Warning (10034): Output port "DRAM_WE_N" at Proyecto.sv(110) has no driver File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto.sv Line: 110
+Warning (10034): Output port "FAN_CTRL" at Proyecto.sv(115) has no driver File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto.sv Line: 115
+Warning (10034): Output port "FPGA_I2C_SCLK" at Proyecto.sv(120) has no driver File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto.sv Line: 120
+Warning (10034): Output port "IRDA_TXD" at Proyecto.sv(200) has no driver File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto.sv Line: 200
+Warning (10034): Output port "TD_RESET_N" at Proyecto.sv(231) has no driver File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto.sv Line: 231
+Info (12128): Elaborating entity "CPU" for hierarchy "CPU:CPUARM" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto.sv Line: 261
+Info (12128): Elaborating entity "PC" for hierarchy "CPU:CPUARM|PC:PC" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/CPU.sv Line: 85
+Info (12128): Elaborating entity "InstructionMemory" for hierarchy "CPU:CPUARM|InstructionMemory:InstructionMemory" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/CPU.sv Line: 92
+Info (12128): Elaborating entity "altsyncram" for hierarchy "CPU:CPUARM|InstructionMemory:InstructionMemory|altsyncram:altsyncram_component" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/InstructionMemory.v Line: 82
+Info (12130): Elaborated megafunction instantiation "CPU:CPUARM|InstructionMemory:InstructionMemory|altsyncram:altsyncram_component" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/InstructionMemory.v Line: 82
+Info (12133): Instantiated megafunction "CPU:CPUARM|InstructionMemory:InstructionMemory|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/InstructionMemory.v Line: 82
+    Info (12134): Parameter "address_aclr_a" = "NONE"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "ROM.hex"
+    Info (12134): Parameter "intended_device_family" = "Cyclone V"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "4096"
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "CLOCK0"
+    Info (12134): Parameter "widthad_a" = "12"
+    Info (12134): Parameter "width_a" = "32"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_l9f1.tdf
+    Info (12023): Found entity 1: altsyncram_l9f1 File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/db/altsyncram_l9f1.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_l9f1" for hierarchy "CPU:CPUARM|InstructionMemory:InstructionMemory|altsyncram:altsyncram_component|altsyncram_l9f1:auto_generated" File: c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "Extend" for hierarchy "CPU:CPUARM|Extend:Extend" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/CPU.sv Line: 96
+Info (12128): Elaborating entity "RegisterFile" for hierarchy "CPU:CPUARM|RegisterFile:RF" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/CPU.sv Line: 99
+Info (12128): Elaborating entity "ALU" for hierarchy "CPU:CPUARM|ALU:ALU" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/CPU.sv Line: 101
+Info (12128): Elaborating entity "ALUComponent" for hierarchy "CPU:CPUARM|ALU:ALU|ALUComponent:ALUComponent" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/ALU.sv Line: 2
+Info (12128): Elaborating entity "n_sumador_completo" for hierarchy "CPU:CPUARM|ALU:ALU|ALUComponent:ALUComponent|n_sumador_completo:op000" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/ALUComponent.sv Line: 12
+Info (12128): Elaborating entity "sumador_1_bit" for hierarchy "CPU:CPUARM|ALU:ALU|ALUComponent:ALUComponent|n_sumador_completo:op000|sumador_1_bit:op[0]" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/n_sumador.sv Line: 8
+Info (12128): Elaborating entity "ControlUnit" for hierarchy "CPU:CPUARM|ControlUnit:ControlUnit" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/CPU.sv Line: 105
+Info (12128): Elaborating entity "ConditionalLogic" for hierarchy "CPU:CPUARM|ControlUnit:ControlUnit|ConditionalLogic:ConditionalLogic" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/ControlUnit.sv Line: 6
+Info (12128): Elaborating entity "ConditionCheck" for hierarchy "CPU:CPUARM|ControlUnit:ControlUnit|ConditionalLogic:ConditionalLogic|ConditionCheck:ConditionCheck" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/ConditionalLogic.sv Line: 16
+Info (12128): Elaborating entity "ControlDecoder" for hierarchy "CPU:CPUARM|ControlUnit:ControlUnit|ControlDecoder:ControlDecoder" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/ControlUnit.sv Line: 11
+Info (12128): Elaborating entity "PCLogic" for hierarchy "CPU:CPUARM|ControlUnit:ControlUnit|ControlDecoder:ControlDecoder|PCLogic:PCLogic" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/ControlDecoder.sv Line: 8
+Info (12128): Elaborating entity "ControlMainDecoder" for hierarchy "CPU:CPUARM|ControlUnit:ControlUnit|ControlDecoder:ControlDecoder|ControlMainDecoder:ControlMainDecoder" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/ControlDecoder.sv Line: 12
+Info (12128): Elaborating entity "ALUDecoder" for hierarchy "CPU:CPUARM|ControlUnit:ControlUnit|ControlDecoder:ControlDecoder|ALUDecoder:ALUDecoder" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/ControlDecoder.sv Line: 15
+Info (12128): Elaborating entity "Shifter" for hierarchy "CPU:CPUARM|Shifter:shifter" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/CPU.sv Line: 109
+Info (12128): Elaborating entity "MUX1_2_4" for hierarchy "CPU:CPUARM|MUX1_2_4:inst_RA1" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/CPU.sv Line: 115
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "CPU:CPUARM|MUX1_2_4:inst_RA1|lpm_mux:LPM_MUX_component" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/MUX1_2_4.v Line: 69
+Info (12130): Elaborated megafunction instantiation "CPU:CPUARM|MUX1_2_4:inst_RA1|lpm_mux:LPM_MUX_component" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/MUX1_2_4.v Line: 69
+Info (12133): Instantiated megafunction "CPU:CPUARM|MUX1_2_4:inst_RA1|lpm_mux:LPM_MUX_component" with the following parameter: File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/MUX1_2_4.v Line: 69
+    Info (12134): Parameter "lpm_size" = "2"
+    Info (12134): Parameter "lpm_type" = "LPM_MUX"
+    Info (12134): Parameter "lpm_width" = "4"
+    Info (12134): Parameter "lpm_widths" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_sjc.tdf
+    Info (12023): Found entity 1: mux_sjc File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/db/mux_sjc.tdf Line: 23
+Info (12128): Elaborating entity "mux_sjc" for hierarchy "CPU:CPUARM|MUX1_2_4:inst_RA1|lpm_mux:LPM_MUX_component|mux_sjc:auto_generated" File: c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
+Info (12128): Elaborating entity "MUX1_2_32" for hierarchy "CPU:CPUARM|MUX1_2_32:Shifted_SrcB" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/CPU.sv Line: 129
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "CPU:CPUARM|MUX1_2_32:Shifted_SrcB|lpm_mux:LPM_MUX_component" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/MUX1_2_32.v Line: 69
+Info (12130): Elaborated megafunction instantiation "CPU:CPUARM|MUX1_2_32:Shifted_SrcB|lpm_mux:LPM_MUX_component" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/MUX1_2_32.v Line: 69
+Info (12133): Instantiated megafunction "CPU:CPUARM|MUX1_2_32:Shifted_SrcB|lpm_mux:LPM_MUX_component" with the following parameter: File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/MUX1_2_32.v Line: 69
+    Info (12134): Parameter "lpm_size" = "2"
+    Info (12134): Parameter "lpm_type" = "LPM_MUX"
+    Info (12134): Parameter "lpm_width" = "32"
+    Info (12134): Parameter "lpm_widths" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_dlc.tdf
+    Info (12023): Found entity 1: mux_dlc File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/db/mux_dlc.tdf Line: 23
+Info (12128): Elaborating entity "mux_dlc" for hierarchy "CPU:CPUARM|MUX1_2_32:Shifted_SrcB|lpm_mux:LPM_MUX_component|mux_dlc:auto_generated" File: c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
+Info (12128): Elaborating entity "DataMemory" for hierarchy "DataMemory:DataMemory" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto.sv Line: 267
+Info (12128): Elaborating entity "altsyncram" for hierarchy "DataMemory:DataMemory|altsyncram:altsyncram_component" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/DataMemory.v Line: 86
+Info (12130): Elaborated megafunction instantiation "DataMemory:DataMemory|altsyncram:altsyncram_component" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/DataMemory.v Line: 86
+Info (12133): Instantiated megafunction "DataMemory:DataMemory|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/DataMemory.v Line: 86
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "RAM.hex"
+    Info (12134): Parameter "intended_device_family" = "Cyclone V"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "300000"
+    Info (12134): Parameter "operation_mode" = "SINGLE_PORT"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "CLOCK0"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "read_during_write_mode_port_a" = "DONT_CARE"
+    Info (12134): Parameter "widthad_a" = "19"
+    Info (12134): Parameter "width_a" = "32"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_fhm1.tdf
+    Info (12023): Found entity 1: altsyncram_fhm1 File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/db/altsyncram_fhm1.tdf Line: 34
+Info (12128): Elaborating entity "altsyncram_fhm1" for hierarchy "DataMemory:DataMemory|altsyncram:altsyncram_component|altsyncram_fhm1:auto_generated" File: c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Warning (113014): Width of data items in "RAM.hex" is smaller than the memory width. Padding data items to fit in memory. Found 65542 warnings, reporting 10 . File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/RAM.hex Line: 1
+    Warning (113010): Data width of the data at line (1) of memory initialization file "RAM.hex" is smaller than that of the memory word. Padding with "0" on the MSB. File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/RAM.hex Line: 1
+    Warning (113010): Data width of the data at line (2) of memory initialization file "RAM.hex" is smaller than that of the memory word. Padding with "0" on the MSB. File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/RAM.hex Line: 2
+    Warning (113010): Data width of the data at line (3) of memory initialization file "RAM.hex" is smaller than that of the memory word. Padding with "0" on the MSB. File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/RAM.hex Line: 3
+    Warning (113010): Data width of the data at line (4) of memory initialization file "RAM.hex" is smaller than that of the memory word. Padding with "0" on the MSB. File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/RAM.hex Line: 4
+    Warning (113010): Data width of the data at line (5) of memory initialization file "RAM.hex" is smaller than that of the memory word. Padding with "0" on the MSB. File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/RAM.hex Line: 5
+    Warning (113010): Data width of the data at line (6) of memory initialization file "RAM.hex" is smaller than that of the memory word. Padding with "0" on the MSB. File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/RAM.hex Line: 6
+    Warning (113010): Data width of the data at line (7) of memory initialization file "RAM.hex" is smaller than that of the memory word. Padding with "0" on the MSB. File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/RAM.hex Line: 7
+    Warning (113010): Data width of the data at line (8) of memory initialization file "RAM.hex" is smaller than that of the memory word. Padding with "0" on the MSB. File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/RAM.hex Line: 8
+    Warning (113010): Data width of the data at line (9) of memory initialization file "RAM.hex" is smaller than that of the memory word. Padding with "0" on the MSB. File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/RAM.hex Line: 9
+    Warning (113010): Data width of the data at line (10) of memory initialization file "RAM.hex" is smaller than that of the memory word. Padding with "0" on the MSB. File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/RAM.hex Line: 10
+Critical Warning (127005): Memory depth (300000) in the design file differs from memory depth (65542) in the Memory Initialization File "C:/Users/aleji/Desktop/Proyecto/proyecto-taller/RAM.hex" -- setting initial value for remaining addresses to 0 File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/DataMemory.v Line: 86
+Info (12021): Found 1 design units, including 1 entities, in source file db/decode_2na.tdf
+    Info (12023): Found entity 1: decode_2na File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/db/decode_2na.tdf Line: 23
+Info (12128): Elaborating entity "decode_2na" for hierarchy "DataMemory:DataMemory|altsyncram:altsyncram_component|altsyncram_fhm1:auto_generated|decode_2na:decode3" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/db/altsyncram_fhm1.tdf Line: 45
+Info (12021): Found 1 design units, including 1 entities, in source file db/decode_r2a.tdf
+    Info (12023): Found entity 1: decode_r2a File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/db/decode_r2a.tdf Line: 23
+Info (12128): Elaborating entity "decode_r2a" for hierarchy "DataMemory:DataMemory|altsyncram:altsyncram_component|altsyncram_fhm1:auto_generated|decode_r2a:rden_decode" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/db/altsyncram_fhm1.tdf Line: 46
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_vib.tdf
+    Info (12023): Found entity 1: mux_vib File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/db/mux_vib.tdf Line: 23
+Info (12128): Elaborating entity "mux_vib" for hierarchy "DataMemory:DataMemory|altsyncram:altsyncram_component|altsyncram_fhm1:auto_generated|mux_vib:mux2" File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/db/altsyncram_fhm1.tdf Line: 47
+Error (12006): Node instance "mostrarImagenEcualizada" instantiates undefined entity "Control_VGA". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/aleji/Desktop/Proyecto/proyecto-taller/Proyecto.sv Line: 270
+Info (144001): Generated suppressed messages file C:/Users/aleji/Desktop/Proyecto/proyecto-taller/output_files/ARMv4.map.smsg
+Error: Quartus Prime Analysis & Elaboration was unsuccessful. 1 error, 53 warnings
+    Error: Peak virtual memory: 4855 megabytes
+    Error: Processing ended: Wed Nov 22 02:21:10 2023
+    Error: Elapsed time: 00:00:14
+    Error: Total CPU time (on all processors): 00:00:19
+
+
++--------------------------------------------+
+; Analysis & Elaboration Suppressed Messages ;
++--------------------------------------------+
+The suppressed messages can be found in C:/Users/aleji/Desktop/Proyecto/proyecto-taller/output_files/ARMv4.map.smsg.
+
+

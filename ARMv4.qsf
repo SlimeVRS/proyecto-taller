@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY ARMv4
+set_global_assignment -name TOP_LEVEL_ENTITY Proyecto
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 22.1STD.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:01:46  NOVEMBER 02, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "22.1std.1 Lite Edition"
@@ -52,21 +52,28 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
-set_global_assignment -name MIF_FILE ARMv4.mif
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SYSTEMVERILOG_FILE n_sumador.sv
+set_global_assignment -name QIP_FILE InstructionMemory.qip
+set_global_assignment -name QIP_FILE DataMemory.qip
+set_global_assignment -name VERILOG_FILE MUX1_4_32.v
+set_global_assignment -name QIP_FILE MUX1_4_32.qip
+set_global_assignment -name VERILOG_FILE MUX1_2_32.v
+set_global_assignment -name QIP_FILE MUX1_2_32.qip
+set_global_assignment -name VERILOG_FILE MUX1_2_4.v
+set_global_assignment -name QIP_FILE MUX1_2_4.qip
+set_global_assignment -name VERILOG_FILE MUX1_2.v
+set_global_assignment -name QIP_FILE MUX1_2.qip
 set_global_assignment -name QIP_FILE rom.qip
-set_global_assignment -name MIF_FILE Mif2.mif
 set_global_assignment -name QIP_FILE ram.qip
-set_global_assignment -name SYSTEMVERILOG_FILE nLshift.sv
-set_global_assignment -name SYSTEMVERILOG_FILE nRshift.sv
-set_global_assignment -name SYSTEMVERILOG_FILE nlLshift.sv
-set_global_assignment -name SYSTEMVERILOG_FILE nlRshift.sv
-set_global_assignment -name SYSTEMVERILOG_FILE 1bitadder.sv
-set_global_assignment -name SYSTEMVERILOG_FILE nfulladder.sv
 set_global_assignment -name SYSTEMVERILOG_FILE restadorNbit.sv
 set_global_assignment -name SYSTEMVERILOG_FILE restador1bit.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ALUComponent.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ALU.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ALUDecoder.sv
 set_global_assignment -name SYSTEMVERILOG_FILE xor.sv
 set_global_assignment -name SYSTEMVERILOG_FILE or_mux_f.sv
 set_global_assignment -name SYSTEMVERILOG_FILE or_mux.sv
@@ -75,3 +82,42 @@ set_global_assignment -name SYSTEMVERILOG_FILE not.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Extend.sv
 set_global_assignment -name SYSTEMVERILOG_FILE PC.sv
 set_global_assignment -name SYSTEMVERILOG_FILE PCLogic.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALU.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALUComponent.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALUComponent_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALUDecoder.sv
+set_global_assignment -name SYSTEMVERILOG_FILE n_and.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ConditionalLogic.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ConditionalLogic_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ConditionCheck.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ConditionCheck_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ControlDecoder.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ControlDecoder_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ControlMainDecoder.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ControlUnit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE CPU.sv
+set_global_assignment -name SYSTEMVERILOG_FILE CPU_tb.sv
+set_global_assignment -name VERILOG_FILE DataMemory.v
+set_global_assignment -name VERILOG_FILE DE1_SOC_golden_top.v
+set_global_assignment -name SYSTEMVERILOG_FILE equal.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Extend_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE greater.sv
+set_global_assignment -name SYSTEMVERILOG_FILE hex_7segments.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Implementacion.sv
+set_global_assignment -name VERILOG_FILE InstructionMemory.v
+set_global_assignment -name SYSTEMVERILOG_FILE Logic_data_manipulation_test_bench.sv
+set_global_assignment -name SYSTEMVERILOG_FILE n_aritmetic_L_shift.sv
+set_global_assignment -name SYSTEMVERILOG_FILE n_aritmetic_R_shift.sv
+set_global_assignment -name SYSTEMVERILOG_FILE n_logical_L_shift.sv
+set_global_assignment -name SYSTEMVERILOG_FILE n_logical_R_shift.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Proyecto.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Proyecto_tb.sv
+set_global_assignment -name VERILOG_FILE RAM.v
+set_global_assignment -name SYSTEMVERILOG_FILE RegisterFile.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RegisterFile_tb.sv
+set_global_assignment -name VERILOG_FILE saad.v
+set_global_assignment -name SYSTEMVERILOG_FILE Shifter.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Shifter_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE sumador_1_bit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE testbench.sv
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
