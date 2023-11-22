@@ -266,8 +266,8 @@ DataMemory DataMemory(
 	MemWrite,
 	ReadData);
 
-Control_VGA mostrarImagenEcualizada(CLOCK2_50, ReadData, VGA_CLK, VGA_HS, 
-												VGA_VS, VGA_SYNC_N, VGA_BLANK_N, VGA_R, VGA_G, VGA_B, ADDRES);
+//Control_VGA mostrarImagenEcualizada(CLOCK2_50, ReadData, VGA_CLK, VGA_HS, 
+												//VGA_VS, VGA_SYNC_N, VGA_BLANK_N, VGA_R, VGA_G, VGA_B, ADDRES);
 												
 
 always_comb begin
