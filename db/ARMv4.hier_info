@@ -1,0 +1,1429 @@
+|ALU
+SrcA[0] => SrcA[0].IN1
+SrcA[1] => SrcA[1].IN1
+SrcA[2] => SrcA[2].IN1
+SrcA[3] => SrcA[3].IN1
+SrcA[4] => SrcA[4].IN1
+SrcA[5] => SrcA[5].IN1
+SrcA[6] => SrcA[6].IN1
+SrcA[7] => SrcA[7].IN1
+SrcA[8] => SrcA[8].IN1
+SrcA[9] => SrcA[9].IN1
+SrcA[10] => SrcA[10].IN1
+SrcA[11] => SrcA[11].IN1
+SrcA[12] => SrcA[12].IN1
+SrcA[13] => SrcA[13].IN1
+SrcA[14] => SrcA[14].IN1
+SrcA[15] => SrcA[15].IN1
+SrcA[16] => SrcA[16].IN1
+SrcA[17] => SrcA[17].IN1
+SrcA[18] => SrcA[18].IN1
+SrcA[19] => SrcA[19].IN1
+SrcA[20] => SrcA[20].IN1
+SrcA[21] => SrcA[21].IN1
+SrcA[22] => SrcA[22].IN1
+SrcA[23] => SrcA[23].IN1
+SrcA[24] => SrcA[24].IN1
+SrcA[25] => SrcA[25].IN1
+SrcA[26] => SrcA[26].IN1
+SrcA[27] => SrcA[27].IN1
+SrcA[28] => SrcA[28].IN1
+SrcA[29] => SrcA[29].IN1
+SrcA[30] => SrcA[30].IN1
+SrcA[31] => SrcA[31].IN1
+SrcB[0] => SrcB[0].IN1
+SrcB[1] => SrcB[1].IN1
+SrcB[2] => SrcB[2].IN1
+SrcB[3] => SrcB[3].IN1
+SrcB[4] => SrcB[4].IN1
+SrcB[5] => SrcB[5].IN1
+SrcB[6] => SrcB[6].IN1
+SrcB[7] => SrcB[7].IN1
+SrcB[8] => SrcB[8].IN1
+SrcB[9] => SrcB[9].IN1
+SrcB[10] => SrcB[10].IN1
+SrcB[11] => SrcB[11].IN1
+SrcB[12] => SrcB[12].IN1
+SrcB[13] => SrcB[13].IN1
+SrcB[14] => SrcB[14].IN1
+SrcB[15] => SrcB[15].IN1
+SrcB[16] => SrcB[16].IN1
+SrcB[17] => SrcB[17].IN1
+SrcB[18] => SrcB[18].IN1
+SrcB[19] => SrcB[19].IN1
+SrcB[20] => SrcB[20].IN1
+SrcB[21] => SrcB[21].IN1
+SrcB[22] => SrcB[22].IN1
+SrcB[23] => SrcB[23].IN1
+SrcB[24] => SrcB[24].IN1
+SrcB[25] => SrcB[25].IN1
+SrcB[26] => SrcB[26].IN1
+SrcB[27] => SrcB[27].IN1
+SrcB[28] => SrcB[28].IN1
+SrcB[29] => SrcB[29].IN1
+SrcB[30] => SrcB[30].IN1
+SrcB[31] => SrcB[31].IN1
+ALUControl[0] => ALUControl[0].IN1
+ALUControl[1] => ALUControl[1].IN1
+ALUControl[2] => ALUControl[2].IN1
+ALUFlags[0] << ALUComponent:ALUComponent.port3
+ALUFlags[1] << ALUComponent:ALUComponent.port3
+ALUFlags[2] << ALUComponent:ALUComponent.port3
+ALUFlags[3] << ALUComponent:ALUComponent.port3
+ALUResult[0] << ALUComponent:ALUComponent.port4
+ALUResult[1] << ALUComponent:ALUComponent.port4
+ALUResult[2] << ALUComponent:ALUComponent.port4
+ALUResult[3] << ALUComponent:ALUComponent.port4
+ALUResult[4] << ALUComponent:ALUComponent.port4
+ALUResult[5] << ALUComponent:ALUComponent.port4
+ALUResult[6] << ALUComponent:ALUComponent.port4
+ALUResult[7] << ALUComponent:ALUComponent.port4
+ALUResult[8] << ALUComponent:ALUComponent.port4
+ALUResult[9] << ALUComponent:ALUComponent.port4
+ALUResult[10] << ALUComponent:ALUComponent.port4
+ALUResult[11] << ALUComponent:ALUComponent.port4
+ALUResult[12] << ALUComponent:ALUComponent.port4
+ALUResult[13] << ALUComponent:ALUComponent.port4
+ALUResult[14] << ALUComponent:ALUComponent.port4
+ALUResult[15] << ALUComponent:ALUComponent.port4
+ALUResult[16] << ALUComponent:ALUComponent.port4
+ALUResult[17] << ALUComponent:ALUComponent.port4
+ALUResult[18] << ALUComponent:ALUComponent.port4
+ALUResult[19] << ALUComponent:ALUComponent.port4
+ALUResult[20] << ALUComponent:ALUComponent.port4
+ALUResult[21] << ALUComponent:ALUComponent.port4
+ALUResult[22] << ALUComponent:ALUComponent.port4
+ALUResult[23] << ALUComponent:ALUComponent.port4
+ALUResult[24] << ALUComponent:ALUComponent.port4
+ALUResult[25] << ALUComponent:ALUComponent.port4
+ALUResult[26] << ALUComponent:ALUComponent.port4
+ALUResult[27] << ALUComponent:ALUComponent.port4
+ALUResult[28] << ALUComponent:ALUComponent.port4
+ALUResult[29] << ALUComponent:ALUComponent.port4
+ALUResult[30] << ALUComponent:ALUComponent.port4
+ALUResult[31] << ALUComponent:ALUComponent.port4
+
+
+|ALU|ALUComponent:ALUComponent
+A[0] => A[0].IN2
+A[1] => A[1].IN2
+A[2] => A[2].IN2
+A[3] => A[3].IN2
+A[4] => A[4].IN2
+A[5] => A[5].IN2
+A[6] => A[6].IN2
+A[7] => A[7].IN2
+A[8] => A[8].IN2
+A[9] => A[9].IN2
+A[10] => A[10].IN2
+A[11] => A[11].IN2
+A[12] => A[12].IN2
+A[13] => A[13].IN2
+A[14] => A[14].IN2
+A[15] => A[15].IN2
+A[16] => A[16].IN2
+A[17] => A[17].IN2
+A[18] => A[18].IN2
+A[19] => A[19].IN2
+A[20] => A[20].IN2
+A[21] => A[21].IN2
+A[22] => A[22].IN2
+A[23] => A[23].IN2
+A[24] => A[24].IN2
+A[25] => A[25].IN2
+A[26] => A[26].IN2
+A[27] => A[27].IN2
+A[28] => A[28].IN2
+A[29] => A[29].IN2
+A[30] => A[30].IN2
+A[31] => A[31].IN2
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+B[8] => B[8].IN1
+B[9] => B[9].IN1
+B[10] => B[10].IN1
+B[11] => B[11].IN1
+B[12] => B[12].IN1
+B[13] => B[13].IN1
+B[14] => B[14].IN1
+B[15] => B[15].IN1
+B[16] => B[16].IN1
+B[17] => B[17].IN1
+B[18] => B[18].IN1
+B[19] => B[19].IN1
+B[20] => B[20].IN1
+B[21] => B[21].IN1
+B[22] => B[22].IN1
+B[23] => B[23].IN1
+B[24] => B[24].IN1
+B[25] => B[25].IN1
+B[26] => B[26].IN1
+B[27] => B[27].IN1
+B[28] => B[28].IN1
+B[29] => B[29].IN1
+B[30] => B[30].IN1
+B[31] => B[31].IN1
+Sel[0] => Mux0.IN6
+Sel[0] => Mux1.IN6
+Sel[0] => Mux2.IN6
+Sel[0] => Mux3.IN6
+Sel[0] => Mux4.IN6
+Sel[0] => Mux5.IN6
+Sel[0] => Mux6.IN6
+Sel[0] => Mux7.IN6
+Sel[0] => Mux8.IN6
+Sel[0] => Mux9.IN6
+Sel[0] => Mux10.IN6
+Sel[0] => Mux11.IN6
+Sel[0] => Mux12.IN6
+Sel[0] => Mux13.IN6
+Sel[0] => Mux14.IN6
+Sel[0] => Mux15.IN6
+Sel[0] => Mux16.IN6
+Sel[0] => Mux17.IN6
+Sel[0] => Mux18.IN6
+Sel[0] => Mux19.IN6
+Sel[0] => Mux20.IN6
+Sel[0] => Mux21.IN6
+Sel[0] => Mux22.IN6
+Sel[0] => Mux23.IN6
+Sel[0] => Mux24.IN6
+Sel[0] => Mux25.IN6
+Sel[0] => Mux26.IN6
+Sel[0] => Mux27.IN6
+Sel[0] => Mux28.IN6
+Sel[0] => Mux29.IN6
+Sel[0] => Mux30.IN6
+Sel[0] => Mux31.IN6
+Sel[0] => Mux32.IN6
+Sel[0] => Mux33.IN6
+Sel[0] => Mux34.IN6
+Sel[0] => Mux35.IN6
+Sel[1] => Mux0.IN5
+Sel[1] => Mux1.IN5
+Sel[1] => Mux2.IN5
+Sel[1] => Mux3.IN5
+Sel[1] => Mux4.IN5
+Sel[1] => Mux5.IN5
+Sel[1] => Mux6.IN5
+Sel[1] => Mux7.IN5
+Sel[1] => Mux8.IN5
+Sel[1] => Mux9.IN5
+Sel[1] => Mux10.IN5
+Sel[1] => Mux11.IN5
+Sel[1] => Mux12.IN5
+Sel[1] => Mux13.IN5
+Sel[1] => Mux14.IN5
+Sel[1] => Mux15.IN5
+Sel[1] => Mux16.IN5
+Sel[1] => Mux17.IN5
+Sel[1] => Mux18.IN5
+Sel[1] => Mux19.IN5
+Sel[1] => Mux20.IN5
+Sel[1] => Mux21.IN5
+Sel[1] => Mux22.IN5
+Sel[1] => Mux23.IN5
+Sel[1] => Mux24.IN5
+Sel[1] => Mux25.IN5
+Sel[1] => Mux26.IN5
+Sel[1] => Mux27.IN5
+Sel[1] => Mux28.IN5
+Sel[1] => Mux29.IN5
+Sel[1] => Mux30.IN5
+Sel[1] => Mux31.IN5
+Sel[1] => Mux32.IN5
+Sel[1] => Mux33.IN5
+Sel[1] => Mux34.IN5
+Sel[1] => Mux35.IN5
+Sel[2] => Mux0.IN4
+Sel[2] => Mux1.IN4
+Sel[2] => Mux2.IN4
+Sel[2] => Mux3.IN4
+Sel[2] => Mux4.IN4
+Sel[2] => Mux5.IN4
+Sel[2] => Mux6.IN4
+Sel[2] => Mux7.IN4
+Sel[2] => Mux8.IN4
+Sel[2] => Mux9.IN4
+Sel[2] => Mux10.IN4
+Sel[2] => Mux11.IN4
+Sel[2] => Mux12.IN4
+Sel[2] => Mux13.IN4
+Sel[2] => Mux14.IN4
+Sel[2] => Mux15.IN4
+Sel[2] => Mux16.IN4
+Sel[2] => Mux17.IN4
+Sel[2] => Mux18.IN4
+Sel[2] => Mux19.IN4
+Sel[2] => Mux20.IN4
+Sel[2] => Mux21.IN4
+Sel[2] => Mux22.IN4
+Sel[2] => Mux23.IN4
+Sel[2] => Mux24.IN4
+Sel[2] => Mux25.IN4
+Sel[2] => Mux26.IN4
+Sel[2] => Mux27.IN4
+Sel[2] => Mux28.IN4
+Sel[2] => Mux29.IN4
+Sel[2] => Mux30.IN4
+Sel[2] => Mux31.IN4
+Sel[2] => Mux32.IN4
+Sel[2] => Mux33.IN4
+Sel[2] => Mux34.IN4
+Sel[2] => Mux35.IN4
+flag[0] <= Mux35.DB_MAX_OUTPUT_PORT_TYPE
+flag[1] <= Mux34.DB_MAX_OUTPUT_PORT_TYPE
+flag[2] <= Mux33.DB_MAX_OUTPUT_PORT_TYPE
+flag[3] <= Mux32.DB_MAX_OUTPUT_PORT_TYPE
+Out[0] <= Mux31.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= Mux30.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= Mux29.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= Mux28.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= Mux27.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= Mux26.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= Mux25.DB_MAX_OUTPUT_PORT_TYPE
+Out[7] <= Mux24.DB_MAX_OUTPUT_PORT_TYPE
+Out[8] <= Mux23.DB_MAX_OUTPUT_PORT_TYPE
+Out[9] <= Mux22.DB_MAX_OUTPUT_PORT_TYPE
+Out[10] <= Mux21.DB_MAX_OUTPUT_PORT_TYPE
+Out[11] <= Mux20.DB_MAX_OUTPUT_PORT_TYPE
+Out[12] <= Mux19.DB_MAX_OUTPUT_PORT_TYPE
+Out[13] <= Mux18.DB_MAX_OUTPUT_PORT_TYPE
+Out[14] <= Mux17.DB_MAX_OUTPUT_PORT_TYPE
+Out[15] <= Mux16.DB_MAX_OUTPUT_PORT_TYPE
+Out[16] <= Mux15.DB_MAX_OUTPUT_PORT_TYPE
+Out[17] <= Mux14.DB_MAX_OUTPUT_PORT_TYPE
+Out[18] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
+Out[19] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
+Out[20] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
+Out[21] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
+Out[22] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
+Out[23] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+Out[24] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+Out[25] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+Out[26] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+Out[27] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+Out[28] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+Out[29] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+Out[30] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+Out[31] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op000
+flag[0] <= overflow_or.DB_MAX_OUTPUT_PORT_TYPE
+flag[1] <= sumador_1_bit:op[31].carry_on
+flag[2] <= <GND>
+flag[3] <= <GND>
+C[0] <= sumador_1_bit:op[0].S
+C[1] <= sumador_1_bit:op[1].S
+C[2] <= sumador_1_bit:op[2].S
+C[3] <= sumador_1_bit:op[3].S
+C[4] <= sumador_1_bit:op[4].S
+C[5] <= sumador_1_bit:op[5].S
+C[6] <= sumador_1_bit:op[6].S
+C[7] <= sumador_1_bit:op[7].S
+C[8] <= sumador_1_bit:op[8].S
+C[9] <= sumador_1_bit:op[9].S
+C[10] <= sumador_1_bit:op[10].S
+C[11] <= sumador_1_bit:op[11].S
+C[12] <= sumador_1_bit:op[12].S
+C[13] <= sumador_1_bit:op[13].S
+C[14] <= sumador_1_bit:op[14].S
+C[15] <= sumador_1_bit:op[15].S
+C[16] <= sumador_1_bit:op[16].S
+C[17] <= sumador_1_bit:op[17].S
+C[18] <= sumador_1_bit:op[18].S
+C[19] <= sumador_1_bit:op[19].S
+C[20] <= sumador_1_bit:op[20].S
+C[21] <= sumador_1_bit:op[21].S
+C[22] <= sumador_1_bit:op[22].S
+C[23] <= sumador_1_bit:op[23].S
+C[24] <= sumador_1_bit:op[24].S
+C[25] <= sumador_1_bit:op[25].S
+C[26] <= sumador_1_bit:op[26].S
+C[27] <= sumador_1_bit:op[27].S
+C[28] <= sumador_1_bit:op[28].S
+C[29] <= sumador_1_bit:op[29].S
+C[30] <= sumador_1_bit:op[30].S
+C[31] <= sumador_1_bit:op[31].S
+A[0] => sumador_1_bit:op[0].A
+A[1] => sumador_1_bit:op[1].A
+A[2] => sumador_1_bit:op[2].A
+A[3] => sumador_1_bit:op[3].A
+A[4] => sumador_1_bit:op[4].A
+A[5] => sumador_1_bit:op[5].A
+A[6] => sumador_1_bit:op[6].A
+A[7] => sumador_1_bit:op[7].A
+A[8] => sumador_1_bit:op[8].A
+A[9] => sumador_1_bit:op[9].A
+A[10] => sumador_1_bit:op[10].A
+A[11] => sumador_1_bit:op[11].A
+A[12] => sumador_1_bit:op[12].A
+A[13] => sumador_1_bit:op[13].A
+A[14] => sumador_1_bit:op[14].A
+A[15] => sumador_1_bit:op[15].A
+A[16] => sumador_1_bit:op[16].A
+A[17] => sumador_1_bit:op[17].A
+A[18] => sumador_1_bit:op[18].A
+A[19] => sumador_1_bit:op[19].A
+A[20] => sumador_1_bit:op[20].A
+A[21] => sumador_1_bit:op[21].A
+A[22] => sumador_1_bit:op[22].A
+A[23] => sumador_1_bit:op[23].A
+A[24] => sumador_1_bit:op[24].A
+A[25] => sumador_1_bit:op[25].A
+A[26] => sumador_1_bit:op[26].A
+A[27] => sumador_1_bit:op[27].A
+A[28] => sumador_1_bit:op[28].A
+A[29] => sumador_1_bit:op[29].A
+A[30] => sumador_1_bit:op[30].A
+A[31] => sumador_1_bit:op[31].A
+A[31] => overflowand2.IN1
+A[31] => overflow_and.IN1
+B[0] => sumador_1_bit:op[0].B
+B[1] => sumador_1_bit:op[1].B
+B[2] => sumador_1_bit:op[2].B
+B[3] => sumador_1_bit:op[3].B
+B[4] => sumador_1_bit:op[4].B
+B[5] => sumador_1_bit:op[5].B
+B[6] => sumador_1_bit:op[6].B
+B[7] => sumador_1_bit:op[7].B
+B[8] => sumador_1_bit:op[8].B
+B[9] => sumador_1_bit:op[9].B
+B[10] => sumador_1_bit:op[10].B
+B[11] => sumador_1_bit:op[11].B
+B[12] => sumador_1_bit:op[12].B
+B[13] => sumador_1_bit:op[13].B
+B[14] => sumador_1_bit:op[14].B
+B[15] => sumador_1_bit:op[15].B
+B[16] => sumador_1_bit:op[16].B
+B[17] => sumador_1_bit:op[17].B
+B[18] => sumador_1_bit:op[18].B
+B[19] => sumador_1_bit:op[19].B
+B[20] => sumador_1_bit:op[20].B
+B[21] => sumador_1_bit:op[21].B
+B[22] => sumador_1_bit:op[22].B
+B[23] => sumador_1_bit:op[23].B
+B[24] => sumador_1_bit:op[24].B
+B[25] => sumador_1_bit:op[25].B
+B[26] => sumador_1_bit:op[26].B
+B[27] => sumador_1_bit:op[27].B
+B[28] => sumador_1_bit:op[28].B
+B[29] => sumador_1_bit:op[29].B
+B[30] => sumador_1_bit:op[30].B
+B[31] => sumador_1_bit:op[31].B
+B[31] => overflowand2.IN2
+B[31] => overflow_and.IN2
+c_in => sumador_1_bit:op[0].carry_in
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op000|sumador_1_bit:op[0]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op000|sumador_1_bit:op[1]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op000|sumador_1_bit:op[2]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op000|sumador_1_bit:op[3]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op000|sumador_1_bit:op[4]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op000|sumador_1_bit:op[5]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op000|sumador_1_bit:op[6]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op000|sumador_1_bit:op[7]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op000|sumador_1_bit:op[8]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op000|sumador_1_bit:op[9]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op000|sumador_1_bit:op[10]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op000|sumador_1_bit:op[11]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op000|sumador_1_bit:op[12]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op000|sumador_1_bit:op[13]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op000|sumador_1_bit:op[14]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op000|sumador_1_bit:op[15]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op000|sumador_1_bit:op[16]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op000|sumador_1_bit:op[17]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op000|sumador_1_bit:op[18]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op000|sumador_1_bit:op[19]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op000|sumador_1_bit:op[20]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op000|sumador_1_bit:op[21]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op000|sumador_1_bit:op[22]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op000|sumador_1_bit:op[23]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op000|sumador_1_bit:op[24]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op000|sumador_1_bit:op[25]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op000|sumador_1_bit:op[26]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op000|sumador_1_bit:op[27]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op000|sumador_1_bit:op[28]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op000|sumador_1_bit:op[29]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op000|sumador_1_bit:op[30]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op000|sumador_1_bit:op[31]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op001
+flag[0] <= overflow_or.DB_MAX_OUTPUT_PORT_TYPE
+flag[1] <= sumador_1_bit:op[31].carry_on
+flag[2] <= <GND>
+flag[3] <= <GND>
+C[0] <= sumador_1_bit:op[0].S
+C[1] <= sumador_1_bit:op[1].S
+C[2] <= sumador_1_bit:op[2].S
+C[3] <= sumador_1_bit:op[3].S
+C[4] <= sumador_1_bit:op[4].S
+C[5] <= sumador_1_bit:op[5].S
+C[6] <= sumador_1_bit:op[6].S
+C[7] <= sumador_1_bit:op[7].S
+C[8] <= sumador_1_bit:op[8].S
+C[9] <= sumador_1_bit:op[9].S
+C[10] <= sumador_1_bit:op[10].S
+C[11] <= sumador_1_bit:op[11].S
+C[12] <= sumador_1_bit:op[12].S
+C[13] <= sumador_1_bit:op[13].S
+C[14] <= sumador_1_bit:op[14].S
+C[15] <= sumador_1_bit:op[15].S
+C[16] <= sumador_1_bit:op[16].S
+C[17] <= sumador_1_bit:op[17].S
+C[18] <= sumador_1_bit:op[18].S
+C[19] <= sumador_1_bit:op[19].S
+C[20] <= sumador_1_bit:op[20].S
+C[21] <= sumador_1_bit:op[21].S
+C[22] <= sumador_1_bit:op[22].S
+C[23] <= sumador_1_bit:op[23].S
+C[24] <= sumador_1_bit:op[24].S
+C[25] <= sumador_1_bit:op[25].S
+C[26] <= sumador_1_bit:op[26].S
+C[27] <= sumador_1_bit:op[27].S
+C[28] <= sumador_1_bit:op[28].S
+C[29] <= sumador_1_bit:op[29].S
+C[30] <= sumador_1_bit:op[30].S
+C[31] <= sumador_1_bit:op[31].S
+A[0] => sumador_1_bit:op[0].A
+A[1] => sumador_1_bit:op[1].A
+A[2] => sumador_1_bit:op[2].A
+A[3] => sumador_1_bit:op[3].A
+A[4] => sumador_1_bit:op[4].A
+A[5] => sumador_1_bit:op[5].A
+A[6] => sumador_1_bit:op[6].A
+A[7] => sumador_1_bit:op[7].A
+A[8] => sumador_1_bit:op[8].A
+A[9] => sumador_1_bit:op[9].A
+A[10] => sumador_1_bit:op[10].A
+A[11] => sumador_1_bit:op[11].A
+A[12] => sumador_1_bit:op[12].A
+A[13] => sumador_1_bit:op[13].A
+A[14] => sumador_1_bit:op[14].A
+A[15] => sumador_1_bit:op[15].A
+A[16] => sumador_1_bit:op[16].A
+A[17] => sumador_1_bit:op[17].A
+A[18] => sumador_1_bit:op[18].A
+A[19] => sumador_1_bit:op[19].A
+A[20] => sumador_1_bit:op[20].A
+A[21] => sumador_1_bit:op[21].A
+A[22] => sumador_1_bit:op[22].A
+A[23] => sumador_1_bit:op[23].A
+A[24] => sumador_1_bit:op[24].A
+A[25] => sumador_1_bit:op[25].A
+A[26] => sumador_1_bit:op[26].A
+A[27] => sumador_1_bit:op[27].A
+A[28] => sumador_1_bit:op[28].A
+A[29] => sumador_1_bit:op[29].A
+A[30] => sumador_1_bit:op[30].A
+A[31] => sumador_1_bit:op[31].A
+A[31] => overflowand2.IN1
+A[31] => overflow_and.IN1
+B[0] => sumador_1_bit:op[0].B
+B[1] => sumador_1_bit:op[1].B
+B[2] => sumador_1_bit:op[2].B
+B[3] => sumador_1_bit:op[3].B
+B[4] => sumador_1_bit:op[4].B
+B[5] => sumador_1_bit:op[5].B
+B[6] => sumador_1_bit:op[6].B
+B[7] => sumador_1_bit:op[7].B
+B[8] => sumador_1_bit:op[8].B
+B[9] => sumador_1_bit:op[9].B
+B[10] => sumador_1_bit:op[10].B
+B[11] => sumador_1_bit:op[11].B
+B[12] => sumador_1_bit:op[12].B
+B[13] => sumador_1_bit:op[13].B
+B[14] => sumador_1_bit:op[14].B
+B[15] => sumador_1_bit:op[15].B
+B[16] => sumador_1_bit:op[16].B
+B[17] => sumador_1_bit:op[17].B
+B[18] => sumador_1_bit:op[18].B
+B[19] => sumador_1_bit:op[19].B
+B[20] => sumador_1_bit:op[20].B
+B[21] => sumador_1_bit:op[21].B
+B[22] => sumador_1_bit:op[22].B
+B[23] => sumador_1_bit:op[23].B
+B[24] => sumador_1_bit:op[24].B
+B[25] => sumador_1_bit:op[25].B
+B[26] => sumador_1_bit:op[26].B
+B[27] => sumador_1_bit:op[27].B
+B[28] => sumador_1_bit:op[28].B
+B[29] => sumador_1_bit:op[29].B
+B[30] => sumador_1_bit:op[30].B
+B[31] => sumador_1_bit:op[31].B
+B[31] => overflowand2.IN2
+B[31] => overflow_and.IN2
+c_in => sumador_1_bit:op[0].carry_in
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op001|sumador_1_bit:op[0]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op001|sumador_1_bit:op[1]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op001|sumador_1_bit:op[2]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op001|sumador_1_bit:op[3]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op001|sumador_1_bit:op[4]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op001|sumador_1_bit:op[5]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op001|sumador_1_bit:op[6]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op001|sumador_1_bit:op[7]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op001|sumador_1_bit:op[8]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op001|sumador_1_bit:op[9]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op001|sumador_1_bit:op[10]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op001|sumador_1_bit:op[11]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op001|sumador_1_bit:op[12]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op001|sumador_1_bit:op[13]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op001|sumador_1_bit:op[14]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op001|sumador_1_bit:op[15]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op001|sumador_1_bit:op[16]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op001|sumador_1_bit:op[17]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op001|sumador_1_bit:op[18]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op001|sumador_1_bit:op[19]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op001|sumador_1_bit:op[20]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op001|sumador_1_bit:op[21]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op001|sumador_1_bit:op[22]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op001|sumador_1_bit:op[23]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op001|sumador_1_bit:op[24]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op001|sumador_1_bit:op[25]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op001|sumador_1_bit:op[26]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op001|sumador_1_bit:op[27]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op001|sumador_1_bit:op[28]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op001|sumador_1_bit:op[29]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op001|sumador_1_bit:op[30]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|ALUComponent:ALUComponent|n_sumador_completo:op001|sumador_1_bit:op[31]
+carry_in => salida.IN0
+carry_in => and_AC.IN0
+carry_in => and_BC.IN0
+A => salida.IN1
+A => and_AB.IN0
+A => and_AC.IN1
+B => salida.IN2
+B => and_AB.IN1
+B => and_BC.IN1
+S <= salida.DB_MAX_OUTPUT_PORT_TYPE
+carry_on <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
